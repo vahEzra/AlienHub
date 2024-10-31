@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "alienHub Loading Menu",
+   Name = "alienHub Menu",
    LoadingTitle = "alienHub Free Version",
    LoadingSubtitle = "by Chinhooks_DT",
    ConfigurationSaving = {
@@ -26,15 +26,15 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-Rayfield:Notify({
-   Title = "alienHub Loader",
-   Content = "Thank you for using alienHub, have a good time!",
-   Duration = 6.5,
-   Image = 73480914475010,
-   Actions = { -- Notification Buttons
+--Rayfield:Notify({
+--   Title = "alienHub Loader",
+--   Content = "Thank you for using alienHub, have a good time!",
+--   Duration = 6.5,
+--   Image = 73480914475010,
+--   Actions = { -- Notification Buttons
 
-},
-})
+--},
+--})
 
 RayField:Notify({
       Title = "Privacy Notification",
