@@ -1,6 +1,3 @@
-if game.Players.LocalPlayer:WaitForChild("PlayerGui").display_text then
--- nope!
-else
 local display_text = Instance.new("ScreenGui")
 local text = Instance.new("TextBox")
 display_text.Name = "display_text"
@@ -24,4 +21,3 @@ text.TextXAlignment = Enum.TextXAlignment.Left
 text:GetPropertyChangedSignal("Text"):Connect(function()
 	game.TextChatService:DisplayBubble(game.Players.LocalPlayer.Character.Head, text.Text)
 end)
-end
