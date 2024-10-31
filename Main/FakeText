@@ -1,3 +1,6 @@
+if game.Players.LocalPlayer:WaitForChild("PlayerGui") then
+-- nope!
+else
 local display_text = Instance.new("ScreenGui")
 local text = Instance.new("TextBox")
 display_text.Name = "display_text"
@@ -19,5 +22,6 @@ text.TextColor3 = Color3.fromRGB(178, 178, 178)
 text.TextSize = 14.000
 text.TextXAlignment = Enum.TextXAlignment.Left
 text.FocusLost:Connect(function()
-	game.TextChatService:DisplayBubble(game.Players.LocalPlayer.Character.Head, script.Parent.Text)
+	game.TextChatService:DisplayBubble(game.Players.LocalPlayer.Character.Head, text.Text)
 end)
+end
