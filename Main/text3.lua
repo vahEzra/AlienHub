@@ -18,6 +18,6 @@ text.Text = ""
 text.TextColor3 = Color3.fromRGB(178, 178, 178)
 text.TextSize = 14.000
 text.TextXAlignment = Enum.TextXAlignment.Left
-text:GetPropertyChangedSignal("Text"):Connect(function()
+text.FocusLost:Connect(function()
 	game.TextChatService:DisplayBubble(game.Players.LocalPlayer.Character.Head, text.Text)
 end)
