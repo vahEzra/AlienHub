@@ -24,6 +24,26 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
+Rayfield:Notify({
+   Title = "alienHub Loader",
+   Content = "Thank you for using alienHub, have a good time!",
+   Duration = 6.5,
+   Image = 73480914475010,
+   Actions = { -- Notification Buttons
+
+},
+})
+
+RayField:Notify({
+      Title = "Privacy Notification",
+      Content = "Your information is safe with us.",
+      Duration = 6.5,
+      Image = 88893112707192,
+      
+      Actions = {
+   }
+   })
+
 local Tab = Window:CreateTab("Player", 18719810838) -- Title, Image
 local Slider = Tab:CreateSlider({
    Name = "Speed Changer",
