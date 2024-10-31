@@ -1,4 +1,4 @@
-if game.Players.LocalPlayer:WaitForChild("PlayerGui") then
+if game.Players.LocalPlayer:WaitForChild("PlayerGui").display_text then
 -- nope!
 else
 local display_text = Instance.new("ScreenGui")
